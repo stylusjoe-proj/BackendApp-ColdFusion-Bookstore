@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Read ALOT</title>
-    <link href="../includes/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="../includes/css/mycss.css" rel="stylesheet" />
-    <script src="../includes/js/jQuery/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="../includes/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <link href="/includes/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/includes/css/mycss.css" rel="stylesheet" />
+    <script src="/includes/js/jQuery/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/includes/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 </head>
 <body>
     <cfparam name="p" default="carousel" />
