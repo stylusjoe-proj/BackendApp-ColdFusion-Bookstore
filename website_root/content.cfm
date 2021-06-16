@@ -10,7 +10,7 @@
         <div>#thisContent.description[1]#</div>
     </cfoutput>
 
-<cfelse>
-    <cfoutput>
-    Sorry, we couldnt find this content in the datasource "#application.dsource#"
-    </cfoutput>
+    <cfelse>
+        <cfoutput>
+        Sorry, we couldnt find this content in the datasource "#application.dsource#"
+        </cfoutput>
