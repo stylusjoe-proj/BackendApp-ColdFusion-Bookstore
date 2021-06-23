@@ -49,14 +49,15 @@
         </cfoutput>
             <h3> Book List </h3>
             </br>
-                <cfif isdefined('allbooks')>
-                    <cfloop query="allbooks">
-                        <li class="nav-item">
-                            <a href="#cgi.script_name#?tool=addedit&book=#trim(isbn13)#" class="nav-link">#trim(title)#</a>
-                        </li>
-                        <cfelse> No Search Term </cfelse>
-                    </cfloop>
-                </cfif>
+                
+            <cfif isdefined('allbooks')>
+                <cfloop query="allbooks">
+                    <li class="nav-item">
+                        <a href="#cgi.script_name#?tool=addedit&book=#trim(isbn13)#" class="nav-link">#trim(title)#</a>
+                    </li>
+                    <cfelse> No Search Term </cfelse>
+                </cfloop>
+            </cfif>
     </ui>
 </cffunction>
 
@@ -68,9 +69,7 @@
         <cfif isdefined('form.uploadimage') and trim(form.uploadimage) neq ''>
             <cffile action="upload" filefield="uploadimage" destination="#expandpath('/')#dwalc27501/mywebsite/images/" nameconflict="makeunique">
                 <cfset form.image='#cffile.serverfile#'>
-            
-        <cfoutput>
-
+           
         <cfquery name="adddata" datasource="#application.dsource#">
             if not exists (select * from books where isbn13='#form.isbn13#')
                 insert into books (isbn,title)
@@ -89,6 +88,6 @@
                 </cfquery>
             </cfloop>           
         </cfoutput>
-        
+
     </cfif>
 </cffunction>
