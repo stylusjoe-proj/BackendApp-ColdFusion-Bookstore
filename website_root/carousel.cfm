@@ -58,7 +58,7 @@
             <table class="table table-hover table-striped" style="width:65%; margin-left:auto;margin-right:auto">
                 <tbody>
                 <tr>
-                    <th>Day</th><th>Hours</th>
+                    <th>Day </th><th>Hours</th>
                 </tr>
                 <tr>
                     <td>Monday</td><td>8am-7pm</td>
